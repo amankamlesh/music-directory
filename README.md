@@ -1,5 +1,5 @@
 # For visiting the hosted website click on this link
-[music-directory.vercel.app]
+(music-directory.vercel.app)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
