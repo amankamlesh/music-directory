@@ -7,7 +7,7 @@ function SearchBar({ searchQuery, setSearchQuery }) {
       placeholder="Search for songs..."
       value={searchQuery}
       onChange={(e) => setSearchQuery(e.target.value)} // Update search query
-      className="w-[513px] h-[54px] px-4 text-black border-2 border-gray-300 rounded-lg"
+      className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500"
     />
   );
 }
