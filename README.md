@@ -1,5 +1,5 @@
 # For visiting the hosted website click on this link
-(music-directory.vercel.app)
+[https://music-directory-ieudn96ly-amans-projects-23864133.vercel.app]
 
 
 ### In this project I have only developed ui.So,songs will not be played 
