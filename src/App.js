@@ -83,49 +83,55 @@ function App() {
       </nav>
 
       {/* Search Bar and Icons */}
-      <div className="flex flex-wrap items-center gap-4 mt-4 md:mt-0 space-x-0 md:space-x-6">
-        <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-        {/* Settings Icon */}
-        <button
-          aria-label="Settings"
-          className="text-gray-200 hover:text-white focus:outline-none"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M12 4.5v1.5m0 12v1.5m7.5-7.5h-1.5m-12 0H4.5m2.474 4.974l1.061-1.061m8.838 0l-1.061 1.061m0-8.838l1.061 1.061M8.035 8.035L6.974 6.974m3.976 5.961a2.25 2.25 0 114.5 0 2.25 2.25 0 01-4.5 0z"
-            />
-          </svg>
-        </button>
-        {/* Logout Icon */}
-        <button
-          aria-label="Logout"
-          className="text-gray-200 hover:text-white focus:outline-none"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={2}
-            stroke="currentColor"
-            className="w-6 h-6"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M15.75 9V5.25A2.25 2.25 0 0013.5 3H6.75A2.25 2.25 0 004.5 5.25v13.5A2.25 2.25 0 006.75 21h6.75a2.25 2.25 0 002.25-2.25V15M18 9l3 3m0 0l-3 3m3-3H9"
-            />
-          </svg>
-        </button>
-      </div>
+      <div className="flex flex-wrap items-center gap-4 mt-4 md:mt-0 md:space-x-6">
+  {/* Search Bar */}
+  <div className="flex-grow w-full md:w-auto">
+    <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+  </div>
+
+  {/* Settings Icon */}
+  <button
+    aria-label="Settings"
+    className="text-gray-200 hover:text-white focus:outline-none"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      className="w-6 h-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 4.5v1.5m0 12v1.5m7.5-7.5h-1.5m-12 0H4.5m2.474 4.974l1.061-1.061m8.838 0l-1.061 1.061m0-8.838l1.061 1.061M8.035 8.035L6.974 6.974m3.976 5.961a2.25 2.25 0 114.5 0 2.25 2.25 0 01-4.5 0z"
+      />
+    </svg>
+  </button>
+
+  {/* Logout Icon */}
+  <button
+    aria-label="Logout"
+    className="text-gray-200 hover:text-white focus:outline-none"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={2}
+      stroke="currentColor"
+      className="w-6 h-6"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M15.75 9V5.25A2.25 2.25 0 0013.5 3H6.75A2.25 2.25 0 004.5 5.25v13.5A2.25 2.25 0 006.75 21h6.75a2.25 2.25 0 002.25-2.25V15M18 9l3 3m0 0l-3 3m3-3H9"
+      />
+    </svg>
+  </button>
+</div>
+
     </div>
 
     {/* Artist Section */}
